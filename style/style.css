@@ -1,0 +1,45 @@
+*{
+    margin: 0;    
+}
+
+.contenedor{
+    height: 100vh;
+    background-image: url('./fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+.card-cabecera{
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    background-color: rgba(0, 0, 0, .03);
+}
+.card-cuerpo{
+    padding: 1.25rem;
+}
+.cuadro{
+    display: flex;
+    justify-content: space-between;
+}
+.campo{
+    width: 40%;
+    padding: .300rem .70rem;
+}
+.campo-select{
+    width: 45.5%;
+    padding: .300rem .70rem;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <title>Votaciones</title>
+</head>
+<body>
+    <div class="contenedor centrar">
+        <div class="card">
+            <div class="card-cabecera">
+                <h1>Formulario de votacion</h1>
+            </div>
+            <div class="card-cuerpo">
+                <form  id="formulario" method="post">
+                    <div class="cuadro">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input class="campo" type="text" id="nombre" name="nombre" >
+                    </div>
+                    <br>
+
+                    <div class="cuadro">
+                        <label for="nombre">Alias</label>
+                        <input class="campo" type="text" id="alias" name="alias" >
+                    </div>
+                    <br>
+
+                    <div class="cuadro">
+                        <label for="nombre">DNI</label>
+                        <input class="campo" type="text" id="dni" name="dni" maxlength="11" >
+                    </div>
+                    <br>
+
+                    <div class="cuadro">
+                        <label for="email">Email</label>
+                        <input class="campo" type="email" id="email" name="email" >
+                    </div>
+                    <br>
+        
+                    <div class="cuadro">
+                        <label for="departamento">Departamento</label>
+                        <select class="campo-select" id="departamento" name="departamento" >
+                        </select>
+                    </div>
+                    <br><br>
+        
+                    <div class="cuadro">
+                        <label for="provincia">Provincia</label>
+                        <select class="campo-select" id="provincia" name="provincia" >
+                        </select>
+                    </div>
+                    <br><br>
+        
+                    <div class="cuadro">
+                        <label for="distrito">Distrito</label>
+                        <select class="campo-select" id="distrito" name="distrito" >
+                        </select>
+                    </div>
+                    <br><br>
+        
+                    <div class="cuadro">
+                        <label for="candidato">Candidato</label>
+                        <select class="campo-select" id="candidato" name="candidato" >
+                        </select>
+                    </div>
+                    <br><br>
+        
+                    
+                    <div class="cuadro">
+                        <label>Como se entero de Nosotros</label>
+                        <input type="checkbox" class="opciones" value="web">Web
+                        <input type="checkbox" class="opciones" value="tv">TV
+                        <input type="checkbox" class="opciones" value="redes sociales">Redes Sociales
+                        <input type="checkbox" class="opciones" value="amigos">Amigos
+                    </div>
+                    <br><br>
+                    
+                    <div class="boton">
+                        <input class="votar" type="submit" value="VOTAR">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="controlador.js"></script>
+</html>
